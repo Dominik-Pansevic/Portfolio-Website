@@ -1,0 +1,68 @@
+<%- include("partials/headerProjects") -%>
+
+<div class="container-fluid" id="Projects">
+
+    <% for (i = 0; i < allProjects.length; i++) {  %>
+    
+        <div class="bigBox" >
+            <div class="projectTitleBlock">
+                <h1 class="boxTitle"><%= allProjects[i].title %></h1>
+            </div>
+            <hr>
+    
+            <div class="projectTopBox">
+    
+                <div class="imageBlock"> 
+                    <img class="projectImage" src="../image/project<%= i+1%>.gif" alt="lol">
+                    <p> <b>Built with: </b><%= allProjects[i].technologies %></p>
+    
+                    <% if(allProjects[i].inProgress === true) { %>
+                        <h6 class="inProgress">Project in progress</h6>
+                    <% } %>
+                    
+                </div>
+              
+                <div class="descriptionBlock">
+    
+                    
+                    <p><%= allProjects[i].description %></p>
+    
+                    <div class="descriptionBullets">
+                        <ul>
+                            <% allProjects[i].features.forEach(function(feature) { %>
+                                <li><%= feature %></li>
+                            <%  }) %>
+      
+                        </ul>
+    
+                    </div>
+    
+                </div>
+     
+            </div>
+    
+            <hr>
+    
+            <div class="buttonBlock">
+                <% if(allProjects[i].demoLink.localeCompare("") === 0 ) {  %>
+                    <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton disabled"><i class="fas fa-puzzle-piece"></i> Not Available</a> 
+                <% } else { %>
+                    <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton"><i class="fas fa-puzzle-piece"></i> Demo</a>                
+                <% } %>
+              </div>
+              <div class="buttonBlock">
+                <% if(allProjects[i].codeLink.localeCompare("") === 0) {  %>
+                    <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton disabled"><i class="fab fa-github"></i> Private</a>
+                <% } else { %>
+                    <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton"><i class="fab fa-github"></i> Code</a>
+                <% } %>
+              </div>
+    
+        </div>
+    
+        <%  } %>
+
+</div>
+
+
+<%- include("partials/footer") -%>

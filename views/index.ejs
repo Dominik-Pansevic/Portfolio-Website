@@ -1,0 +1,171 @@
+<%- include("partials/header") -%>
+
+    <div id="intro-background" class="pagePadding">
+
+        <div class="container-fluid" id="introSection">
+    
+                <div class="container">
+                  <h1 class="introTitle">Dominik Pansevic</h1>
+                  <h2 class="introTitle2">Software Engineer & Full Stack Developer</h2>
+                  <hr>
+                  <p class="pSubtitle"><b><i>On a quest to attain knowledge, wisdom, and fun_ </i></b></p>
+                  <a href="https://github.com/Dominik-Pansevic/" class="btn btn-outline-light btn-lg download-button btnPixel" role="button"><i class="fab fa-github"></i> GitHub </a>
+                  <a href="https://linkedin.com/in/dominik-pansevic-2707a913a" class="btn btn-outline-light btn-lg download-button btnPixel" role="button"><i class="fab fa-linkedin"></i> LinkedIn </a>
+                </div>
+    
+        </div>
+    
+    </div>
+
+
+<div class="container-fluid" id="About">
+
+    <h1 class="sectionTitle">#About</h1>
+<div class="bigBox">
+    <div class="aboutBlock">
+    <img class="aboutImage" src="../image/profile.jpg" alt="">
+    
+    <hr>
+    <p><i><b>Greetings!</b> My name is Dominik. I am a recent software engineering & computing university graduate. 
+        I enjoy writing code and designing robust systems using a wide range of technologies at my disposal. 
+        From large-scale web applications to standalone desktop programs and embedded systems, there's always 
+        something that piques my interest!</i></p>
+    </div>
+    
+</div>
+    
+</div>
+
+<div class="container-fluid" id="Skills">
+
+    <h1 class="sectionTitle">#Skills</h1>
+
+    <div class="row"> 
+
+        <% allGroups.forEach(function(item) { %>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 box" >
+               <h1 class="boxTitle" ><i class="<%=item.categoryIconHtml%>"></i> <%= item.category %></h1>
+               
+           
+           <ul class="list-group"> 
+               <% item.skills.forEach(function(skill) { %>
+                <li class="list-group-item"><%= skill %></li>
+                
+
+               <%  }) %>
+            
+
+           </ul>
+
+            </div>
+       <%  }) %>
+    
+    </div>
+
+   
+</div>
+
+<div class="container-fluid" id="Projects">
+
+    <h1 class="sectionTitle">#Projects</h1>
+
+    <% for (i = 0; i < 5; i++) {  %>
+    
+    <div class="bigBox" >
+        <div class="projectTitleBlock">
+            <h1 class="boxTitle"><%= allProjects[i].title %></h1>
+        </div>
+        <hr>
+
+        <div class="projectTopBox">
+
+            <div class="imageBlock"> 
+                <img class="projectImage" src="../image/project<%= i+1%>.gif" alt="lol">
+                <p> <b>Built with: </b><%= allProjects[i].technologies %></p>
+
+                <% if(allProjects[i].inProgress === true) { %>
+                    <h6 class="inProgress">Project in progress</h6>
+                <% } %>
+                
+            </div>
+          
+            <div class="descriptionBlock">
+
+                
+                <p><%= allProjects[i].description %></p>
+
+                <div class="descriptionBullets">
+                    <ul>
+                        <% allProjects[i].features.forEach(function(feature) { %>
+                            <li><%= feature %></li>
+                        <%  }) %>
+  
+                    </ul>
+
+                </div>
+
+            </div>
+ 
+        </div>
+
+        <hr>
+
+        <div class="buttonBlock">
+            <% if(allProjects[i].demoLink.localeCompare("") === 0 ) {  %>
+                <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton disabled"><i class="fas fa-puzzle-piece"></i> Not Available</a> 
+            <% } else { %>
+                <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton"><i class="fas fa-puzzle-piece"></i> Demo</a>                
+            <% } %>
+          </div>
+          <div class="buttonBlock">
+            <% if(allProjects[i].codeLink.localeCompare("") === 0) {  %>
+                <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton disabled"><i class="fab fa-github"></i> Private</a>
+            <% } else { %>
+                <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton"><i class="fab fa-github"></i> Code</a>
+            <% } %>
+          </div>
+
+    </div>
+
+    <%  } %>
+
+           <div class="buttonBlockMore">
+                <a href="/projects" class="btn btn-lg btn-block btn-dark"><i class="fas fa-folder-open"></i> All Projects</a>
+           </div>
+        
+</div>
+<div class="container-fluid" id="Contact">
+
+    <div class="bigBox" >
+
+        <div class="reglogInner">
+
+            <h1><i class="fas fa-envelope"></i> Contact Me</h1>
+            <div class="">E-mail me at <u>dominik.pansevic@gmail.com</u> <br>
+                          You can also get in touch via the contact form below.</div>
+            <br>
+          
+            <form action="/" method="POST">
+              <div class="form-group">
+      
+                <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+      
+                <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+              </div>
+              <div class="form-group">
+      
+                <textarea class="form-control" aria-label="With textarea" placeholder="Enter your message" name="messageLeft" required></textarea>
+                <p><%=emailMessage%></p>
+              </div>
+            
+              <button type="submit" class="btn btn-lg btn-block btn-dark"><i class="fas fa-share"></i> Send Message</button>
+              
+            </form>
+          </div>          
+    </div>
+</div>
+
+<%- include("partials/footer") -%>

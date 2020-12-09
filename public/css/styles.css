@@ -1,0 +1,394 @@
+@media (max-width: 320px)
+{
+  .pagePadding {
+    padding-top: 30%;
+   
+  }
+
+  h1 {
+      font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  .navbar-brand {
+    font-size: 0.8rem !important;
+  }
+
+  body {
+    font-size: 0.8rem !important;
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+a{ 
+    color: #aa3a3a;
+}
+
+.inProgress {
+  color: gray;
+  
+}
+
+a:hover {
+    color: #7e2a2a;
+    text-decoration: none;
+}
+
+.introTitle {
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.introTitle2 {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  
+}
+
+.sectionTitle {
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+}
+
+.pSubtitle {
+    font-family: 'Encode Sans', sans-serif;
+    color: #64B4B1;
+}
+
+
+.nav-item {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1f4e5f;
+    background-color: transparent !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.24));
+    z-index: 99;
+  
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+    margin-left: 2rem;
+    font-family: 'Encode Sans', sans-serif;
+    color: #ffffff !important;
+  }
+
+  .navbar-brand:hover{
+    color: #aaaaaa !important;
+  }
+
+  .navbar-nav .nav-link {
+    padding-bottom: 0;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    line-height: normal;
+    font-family: 'Righteous', cursive;
+  }
+
+  #footer {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-color: #aa3a3a;
+  
+  }
+
+  #introSection {
+    text-align: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    padding-top: 20%;
+    padding-bottom: 30%;
+  }
+
+  #About {
+    text-align: center;
+    padding-top: 2%;
+    background-color: #F1F5F8;
+    padding-bottom: 5%;
+  }
+
+  #Skills {
+    text-align: center;
+    padding-top: 2%;
+    background-color: #307672;
+    padding-bottom: 5%;
+  }
+
+  #Projects {
+    text-align: center;
+    padding-top: 2%;
+    background-color: #144d53;
+    padding-bottom: 5%;
+  }
+
+  #Contact {
+    padding-top: 2%;
+    background-color: #F1F5F8;
+    padding-bottom: 2%;
+  }
+
+  #intro-background {
+    background-image: url("../image/intro_background.jpg");
+    color: #213651;
+    background-size: 100% 100%;
+  }
+
+  .box {
+    max-width: 360px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 2%;
+  }
+
+  .bigBox{
+   
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.8);
+    align-items: center;
+    padding: 2% 5%;
+    overflow: hidden;
+      
+  }
+
+  .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+  }
+
+  .buttonBlock {
+    width: 48%;
+    display: inline-block;
+    padding-left: 0px;
+    text-align: center;
+
+  }
+
+  .buttonBlockMore {
+    width: 48%;
+    display: inline-block;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .projectImage {
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 4%;
+    border: 1px solid rgb(163, 163, 163);
+  }
+
+  .aboutImage {
+    width: 20%;
+    border-radius: 120px;
+    text-align: center;
+    margin-bottom: 2%;
+    
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.8);
+  }
+
+  .aboutBlock {
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+    padding: 3% 6%;
+
+  }
+
+  .imageBlock {
+    width: 50%;
+    margin-right: 1.5%;
+    display: inline-block;
+    padding-left: 0px;
+    border-radius: 5px;
+    margin-top:0.5%;
+    
+  }
+
+  .techBlock {
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border-radius: 5px;
+    
+  }
+
+  .descriptionBlock {
+    vertical-align: top;
+    border-radius: 5px;
+    width: 47%;
+    text-align: left;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  .projectTopBox {
+    vertical-align: top;
+    display: table-cell;
+    margin: 50px;
+    background: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0px;
+  }
+
+  .projectTitleBlock {
+      margin-bottom: 3%;
+      
+      border-radius: 5px;
+  }
+
+  .btn {
+    border-radius: 20px;
+  }
+
+  .demoButton{
+      background-color:#aa3a3a;
+      border-color: #aa3a3a;
+  }
+
+  .demoButton:hover{
+    background-color:#792929;
+    border-color: #792929;
+  }
+
+  .demoButton:active{
+    background-color:#792929;
+    border-color: #792929;
+  }
+
+  .moreProjectsButton{
+      background-color:#333B3F;
+      border-color: #333B3F;
+  }
+
+
+  .boxTitle {
+    font-size: 2rem;
+  }
+
+  .list-group-item {
+      padding: 0px;
+  }
+
+  .listForm {
+      margin: 2% 10%;
+  }
+
+  @media (max-width: 425px)
+  {
+    .pagePadding {
+      padding-top: 25%;
+     
+    }
+      .bigBox {
+          max-width: 95% !important;
+          min-width: 95% !important;
+      }
+  
+      .box {
+        max-width: 95% !important;
+        min-width: 95% !important;
+
+    }
+
+    .imageBlock {
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+        padding-left: 0px;
+        text-align: center;
+        border-radius: 5px;
+      }
+
+      .descriptionBlock {
+        vertical-align: middle;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        display: block;
+      }
+
+      .navbar-brand {
+        font-size: 1.1rem;
+        margin-left: 0.3rem;
+      
+      }
+
+      .buttonBlockMore {
+        width: 60%;
+      }
+
+      .navbar {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.685));
+      
+      }
+
+      .imageBlock {
+        margin-bottom: 5%;
+      }
+
+      .aboutImage {
+        width: 40%;
+      }
+
+      .descriptionBullets {
+        text-align: left;
+        
+    }
+
+    .boxTitle {
+       padding-top: 1%;
+       font-size: 1.5rem;
+      }
+
+      .listForm {
+        margin: 2% 8%;
+    }
+
+    .btn-lg{
+        font-size: 1rem;
+    }
+
+  }
+
+  .descriptionBullets {
+    width: 100%;
+    padding-left: 3%;
+    display: inline-block; 
+}
+
+.demoButton {
+  width: 80%;
+}
+
+.codeButton {
+  width: 80%;
+}
+
