@@ -86,6 +86,33 @@ app.post("/", function(req, res) {
     res.redirect("/#Contact");
   });
 
+
+
+  app.get("/", function(req, res) {
+
+    skillGroup.find({}, function(err, groupsFound) {
+        if(err){
+            console.log(err);
+        } else {   
+            project.find({}, function(err, projectsFound) {
+                if(err){
+                    console.log(err);
+                } else {
+                     res.render("index", {allGroups: groupsFound, allProjects: projectsFound, emailMessage: emailMessage});
+                     emailMessage = "";
+                }
+            });
+            
+        }
+    });
+
+
+  });
+
+  app.get("/ding", function(req, res) {
+      res.send("Dong");
+  });
+  
 // Server start _____________________________
 app.listen(process.env.PORT || 3000, function() {
     console.log("Server started on port 3000");

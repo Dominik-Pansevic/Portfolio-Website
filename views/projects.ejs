@@ -6,7 +6,7 @@
     
         <div class="bigBox" >
             <div class="projectTitleBlock">
-                <h1 class="boxTitle"><%= allProjects[i].title %></h1>
+                <h1 class="boxTitle"><b><%= allProjects[i].title %></b></h1>
             </div>
             <hr>
     
@@ -45,16 +45,16 @@
     
             <div class="buttonBlock">
                 <% if(allProjects[i].demoLink.localeCompare("") === 0 ) {  %>
-                    <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton disabled"><i class="fas fa-puzzle-piece"></i> Not Available</a> 
+                    <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-dark demoButton disabled"><i class="fas fa-puzzle-piece"></i> Not Available</a> 
                 <% } else { %>
-                    <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton"><i class="fas fa-puzzle-piece"></i> Demo</a>                
+                    <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-dark demoButton"><i class="fas fa-puzzle-piece"></i> Demo</a>                
                 <% } %>
               </div>
               <div class="buttonBlock">
                 <% if(allProjects[i].codeLink.localeCompare("") === 0) {  %>
-                    <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton disabled"><i class="fab fa-github"></i> Private</a>
+                    <a href="<%=allProjects[i].codeLink%>" class="btn btn-outline-dark btn-lg codeButton disabled"><i class="fab fa-github"></i> Private</a>
                 <% } else { %>
-                    <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton"><i class="fab fa-github"></i> Code</a>
+                    <a href="<%=allProjects[i].codeLink%>" class="btn btn-outline-dark btn-lg codeButton"><i class="fab fa-github"></i> Code</a>
                 <% } %>
               </div>
     

@@ -11,6 +11,7 @@
 
   h2 {
     font-size: 1.5rem !important;
+
   }
   .navbar-brand {
     font-size: 0.8rem !important;
@@ -27,11 +28,11 @@ html {
 
 
 body {
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a{ 
-    color: #aa3a3a;
+    color: #dbdbdb;
 }
 
 .inProgress {
@@ -40,7 +41,7 @@ a{
 }
 
 a:hover {
-    color: #7e2a2a;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -50,14 +51,21 @@ a:hover {
 }
 
 .introTitle2 {
-  color: white;
-  font-family: 'Manrope', sans-serif;
+  color: rgb(20, 20, 20);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
   
 }
 
 .sectionTitle {
   font-family: 'Righteous', cursive;
-  font-weight: bolder;
+  font-weight: 800;
+}
+.sectionTitle-dark {
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  
+
 }
 
 .pSubtitle {
@@ -74,9 +82,8 @@ a:hover {
   .navbar {
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: #1f4e5f;
     background-color: transparent !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.24));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.623));
     z-index: 99;
   
   }
@@ -84,7 +91,7 @@ a:hover {
   .navbar-brand {
     font-size: 2rem;
     margin-left: 2rem;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #ffffff !important;
   }
 
@@ -97,21 +104,23 @@ a:hover {
     font-size: 1.2rem;
     margin-left: 1rem;
     line-height: normal;
-    font-family: 'Righteous', cursive;
+    font-family: 'Nunito', sans-serif;
   }
 
   #footer {
     text-align: center;
     padding-top: 2%;
     padding-bottom: 1%;
-    background-color: #aa3a3a;
+    background-color: #23282B;
+    color: #dbdbdb;
+    font-weight: 100;
   
   }
 
   #introSection {
     text-align: center;
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding-top: 20%;
     padding-bottom: 30%;
   }
@@ -119,34 +128,36 @@ a:hover {
   #About {
     text-align: center;
     padding-top: 2%;
-    background-color: #F1F5F8;
+    background-color: #e8e8e8;
     padding-bottom: 5%;
   }
 
   #Skills {
     text-align: center;
     padding-top: 2%;
-    background-color: #307672;
+    background-color: #495464;
     padding-bottom: 5%;
   }
 
   #Projects {
     text-align: center;
     padding-top: 2%;
-    background-color: #144d53;
+    background-color: #2e353f;
     padding-bottom: 5%;
   }
 
   #Contact {
     padding-top: 2%;
-    background-color: #F1F5F8;
+    background-color: #e8e8e8;
     padding-bottom: 2%;
   }
 
   #intro-background {
     background-image: url("../image/intro_background.jpg");
-    color: #213651;
     background-size: 100% 100%;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .box {
@@ -267,21 +278,6 @@ a:hover {
     border-radius: 20px;
   }
 
-  .demoButton{
-      background-color:#aa3a3a;
-      border-color: #aa3a3a;
-  }
-
-  .demoButton:hover{
-    background-color:#792929;
-    border-color: #792929;
-  }
-
-  .demoButton:active{
-    background-color:#792929;
-    border-color: #792929;
-  }
-
   .moreProjectsButton{
       background-color:#333B3F;
       border-color: #333B3F;
@@ -343,11 +339,6 @@ a:hover {
 
       .buttonBlockMore {
         width: 60%;
-      }
-
-      .navbar {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.685));
-      
       }
 
       .imageBlock {

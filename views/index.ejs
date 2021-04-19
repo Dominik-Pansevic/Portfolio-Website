@@ -2,15 +2,15 @@
 
     <div id="intro-background" class="pagePadding">
 
-        <div class="container-fluid" id="introSection">
+        <div class="" id="introSection">
     
                 <div class="container">
                   <h1 class="introTitle">Dominik Pansevic</h1>
                   <h2 class="introTitle2">Software Engineer & Full Stack Developer</h2>
                   <hr>
-                  <p class="pSubtitle"><b><i>On a quest to attain knowledge, wisdom, and fun_ </i></b></p>
-                  <a href="https://github.com/Dominik-Pansevic/" class="btn btn-outline-light btn-lg download-button btnPixel" role="button"><i class="fab fa-github"></i> GitHub </a>
-                  <a href="https://linkedin.com/in/dominik-pansevic-2707a913a" class="btn btn-outline-light btn-lg download-button btnPixel" role="button"><i class="fab fa-linkedin"></i> LinkedIn </a>
+                
+                  <a href="https://github.com/Dominik-Pansevic/" class="btn btn-dark btn-lg download-button" role="button"><i class="fab fa-github"></i> GitHub </a>
+                  <a href="https://www.linkedin.com/in/dominik-pansevi%C4%8D-2707a913a/" class="btn btn-light btn-lg download-button" role="button"><i class="fab fa-linkedin"></i> LinkedIn </a>
                 </div>
     
         </div>
@@ -26,10 +26,12 @@
     <img class="aboutImage" src="../image/profile.jpg" alt="">
     
     <hr>
-    <p><i><b>Greetings!</b> My name is Dominik. I am a recent software engineering & computing university graduate. 
-        I enjoy writing code and designing robust systems using a wide range of technologies at my disposal. 
-        From large-scale web applications to standalone desktop programs and embedded systems, there's always 
-        something that piques my interest!</i></p>
+    <p><i><b>Greetings!</b> My name is Dominik. 
+        I enjoy writing code and designing robust systems 
+        using a wide range of technologies at my disposal. 
+        From web applications to standalone desktop programs 
+        and embedded systems, there's always something that 
+        piques my interest!</i></p>
     </div>
     
 </div>
@@ -68,13 +70,13 @@
 
 <div class="container-fluid" id="Projects">
 
-    <h1 class="sectionTitle">#Projects</h1>
+    <h1 class="sectionTitle-dark">#Projects</h1>
 
     <% for (i = 0; i < 5; i++) {  %>
     
     <div class="bigBox" >
         <div class="projectTitleBlock">
-            <h1 class="boxTitle"><%= allProjects[i].title %></h1>
+            <h1 class="boxTitle"><b><%= allProjects[i].title %></b></h1>
         </div>
         <hr>
 
@@ -113,16 +115,16 @@
 
         <div class="buttonBlock">
             <% if(allProjects[i].demoLink.localeCompare("") === 0 ) {  %>
-                <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton disabled"><i class="fas fa-puzzle-piece"></i> Not Available</a> 
+                <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-dark demoButton disabled"><i class="fas fa-puzzle-piece"></i> Not Available</a> 
             <% } else { %>
-                <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-danger demoButton"><i class="fas fa-puzzle-piece"></i> Demo</a>                
+                <a href="<%=allProjects[i].demoLink%>" class="btn btn-lg btn-dark demoButton"><i class="fas fa-puzzle-piece"></i> Demo</a>                
             <% } %>
           </div>
           <div class="buttonBlock">
             <% if(allProjects[i].codeLink.localeCompare("") === 0) {  %>
-                <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton disabled"><i class="fab fa-github"></i> Private</a>
+                <a href="<%=allProjects[i].codeLink%>" class="btn btn-outline-dark btn-lg codeButton disabled"><i class="fab fa-github"></i> Private</a>
             <% } else { %>
-                <a href="<%=allProjects[i].codeLink%>" class="btn btn-info btn-lg codeButton"><i class="fab fa-github"></i> Code</a>
+                <a href="<%=allProjects[i].codeLink%>" class="btn btn-outline-dark btn-lg codeButton"><i class="fab fa-github"></i> Code</a>
             <% } %>
           </div>
 
@@ -131,7 +133,7 @@
     <%  } %>
 
            <div class="buttonBlockMore">
-                <a href="/projects" class="btn btn-lg btn-block btn-dark"><i class="fas fa-folder-open"></i> All Projects</a>
+                <a href="/projects" class="btn btn-lg btn-block btn-light"><i class="fas fa-folder-open"></i> All Projects</a>
            </div>
         
 </div>
@@ -161,7 +163,7 @@
                 <p><%=emailMessage%></p>
               </div>
             
-              <button type="submit" class="btn btn-lg btn-block btn-dark"><i class="fas fa-share"></i> Send Message</button>
+              <button type="submit" class="btn btn-lg btn-block btn-success"><i class="fas fa-share"></i> Send Message</button>
               
             </form>
           </div>          
